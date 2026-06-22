@@ -1,4 +1,4 @@
-import { Check, QrCode, Smartphone } from "lucide-react";
+import { Check, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const highlights = [
@@ -12,54 +12,42 @@ const highlights = [
 
 export function AppShowcase() {
   return (
-    <section className="py-20 md:py-28 bg-slate-50">
+    <section className="py-20 md:py-28 bg-[#0a0a0a] border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="flex-1">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-              <Smartphone className="w-4 h-4" />
-              Get the App
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Get the QR Studio
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-md">
-              Create high-precision, customized QR codes for your brand in
-              seconds. Your complete QR code toolkit on Android.
+              Create high-precision, customized QR codes for your brand in seconds. Your complete QR code toolkit on Android.
             </p>
 
             <ul className="space-y-3 mb-8">
               {highlights.map((item) => (
                 <li key={item} className="flex items-center gap-3">
-                  <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary-foreground" />
-                  </div>
-                  <span className="text-foreground text-sm">{item}</span>
+                  <Check className="w-4 h-4 text-white shrink-0" />
+                  <span className="text-muted-foreground text-sm">{item}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="flex gap-4">
-              <a href="/qr-studio.apk" download>
-                <Button size="lg" className="rounded-full px-8 gap-2">
-                  <QrCode className="w-5 h-5" />
-                  Download Free
-                </Button>
-              </a>
-            </div>
+            <a href="/qr-studio.apk" download>
+              <Button className="rounded-full px-8 gap-2 bg-white text-black hover:bg-white/90">
+                <QrCode className="w-5 h-5" />
+                Download Free
+              </Button>
+            </a>
           </div>
 
           <div className="flex-1 flex justify-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/10 blur-3xl rounded-full" />
-              <div className="relative bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl border border-slate-700">
-                <div className="rounded-4xl overflow-hidden bg-slate-800 w-70 sm:w-[320px]">
-                  <img
-                    src="/screenshots/create.jpg"
-                    alt="QR Studio App - Create QR Code"
-                    className="w-full h-auto"
-                  />
-                </div>
+            <div className="bg-[#111] border border-border rounded-2xl p-2">
+              <div className="rounded-xl overflow-hidden bg-[#0a0a0a] w-[280px] sm:w-[320px]">
+                <img
+                  src="/screenshots/create.jpg"
+                  alt="QR Studio App - Create QR Code"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>

@@ -3,14 +3,14 @@ import { Button } from "@/components/ui/button";
 
 export function DownloadCTA() {
   return (
-    <section id="download" className="py-20 md:py-28 bg-slate-50">
+    <section id="download" className="py-20 md:py-28 bg-[#0a0a0a] border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl border border-border p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-          <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0">
-            <Smartphone className="w-8 h-8 text-primary" />
+        <div className="bg-[#111] border border-border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+          <div className="w-12 h-12 border border-border rounded-xl flex items-center justify-center shrink-0">
+            <Smartphone className="w-6 h-6 text-white" />
           </div>
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
               Made for QR Studio platform
             </h2>
             <p className="text-muted-foreground">
@@ -18,7 +18,7 @@ export function DownloadCTA() {
             </p>
           </div>
           <a href="/qr-studio.apk" download>
-            <Button size="lg" className="rounded-full px-8 gap-2 shrink-0">
+            <Button className="rounded-full px-8 gap-2 shrink-0 bg-white text-black hover:bg-white/90">
               <Download className="w-5 h-5" />
               Download APK
             </Button>

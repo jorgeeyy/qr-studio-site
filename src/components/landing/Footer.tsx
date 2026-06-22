@@ -8,34 +8,30 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-400">
+    <footer className="bg-black border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center">
-                <QrCode className="w-5 h-5 text-primary-foreground" />
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                <QrCode className="w-4 h-4 text-black" />
               </div>
-              <span className="text-xl font-bold text-white">QR Studio</span>
+              <span className="text-lg font-semibold text-white">QR Studio</span>
             </div>
-            <p className="text-sm text-slate-500 max-w-xs">
-              Your all-in-one QR code toolkit for Android. Create, customize,
-              and scan with ease.
+            <p className="text-sm text-muted-foreground max-w-xs">
+              Your all-in-one QR code toolkit for Android. Create, customize, and scan with ease.
             </p>
           </div>
 
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="text-sm font-semibold text-white mb-4">
+              <h4 className="text-sm font-medium text-white mb-4">
                 {category}
               </h4>
               <ul className="space-y-2">
                 {links.map((link) => (
                   <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm text-slate-500 hover:text-slate-300 transition-colors"
-                    >
+                    <a href="#" className="text-sm text-muted-foreground hover:text-white transition-colors">
                       {link}
                     </a>
                   </li>
@@ -45,8 +41,8 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-slate-800 pt-8 text-center">
-          <p className="text-sm text-slate-600">
+        <div className="border-t border-border pt-8 text-center">
+          <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} QR Studio. All rights reserved.
           </p>
         </div>
