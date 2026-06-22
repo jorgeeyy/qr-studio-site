@@ -46,19 +46,21 @@ export function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-black px-4 py-4 space-y-3">
-          <a href="#features" className="block text-sm text-muted-foreground" onClick={() => setMobileOpen(false)}>
+        <div className="md:hidden border-t border-border bg-black px-4 py-4 space-y-1">
+          <a href="#features" className="block py-3 text-sm text-muted-foreground hover:text-white" onClick={() => setMobileOpen(false)}>
             Features
           </a>
-          <a href="#screenshots" className="block text-sm text-muted-foreground" onClick={() => setMobileOpen(false)}>
+          <a href="#screenshots" className="block py-3 text-sm text-muted-foreground hover:text-white" onClick={() => setMobileOpen(false)}>
             Screenshots
           </a>
-          <a href="#download" className="block text-sm text-muted-foreground" onClick={() => setMobileOpen(false)}>
+          <a href="#download" className="block py-3 text-sm text-muted-foreground hover:text-white" onClick={() => setMobileOpen(false)}>
             Download
           </a>
-          <a href="/qr-studio.apk" download>
-            <Button className="w-full rounded-full bg-white text-black hover:bg-white/90">Download</Button>
-          </a>
+          <div className="pt-2">
+            <a href="/qr-studio.apk" download>
+              <Button className="w-full rounded-full bg-white text-black hover:bg-white/90">Download</Button>
+            </a>
+          </div>
         </div>
       )}
     </nav>

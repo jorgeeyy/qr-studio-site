@@ -12,7 +12,7 @@ export function BlueBanner() {
           Download the app now and start generating professional QR codes in seconds. It&apos;s free!
         </p>
         <a href="/qr-studio.apk" download>
-          <Button className="rounded-full px-8 h-12 text-base gap-2 bg-white text-black hover:bg-white/90">
+          <Button className="rounded-full px-8 h-12 text-base gap-2 bg-white text-black hover:bg-white/90 w-full sm:w-auto">
             <Download className="w-5 h-5" />
             Download Now
           </Button>

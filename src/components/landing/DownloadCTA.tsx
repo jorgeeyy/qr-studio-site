@@ -17,8 +17,8 @@ export function DownloadCTA() {
               Download QR Studio for Android and start creating professional QR codes today.
             </p>
           </div>
-          <a href="/qr-studio.apk" download>
-            <Button className="rounded-full px-8 gap-2 shrink-0 bg-white text-black hover:bg-white/90">
+          <a href="/qr-studio.apk" download className="w-full md:w-auto">
+            <Button className="w-full md:w-auto rounded-full px-8 gap-2 shrink-0 bg-white text-black hover:bg-white/90">
               <Download className="w-5 h-5" />
               Download APK
             </Button>

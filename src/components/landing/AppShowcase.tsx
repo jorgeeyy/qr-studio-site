@@ -19,7 +19,7 @@ export function AppShowcase() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Get the QR Studio
             </h2>
-            <p className="text-muted-foreground text-lg mb-8 max-w-md">
+            <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto lg:mx-0">
               Create high-precision, customized QR codes for your brand in seconds. Your complete QR code toolkit on Android.
             </p>
 
