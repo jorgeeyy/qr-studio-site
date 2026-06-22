@@ -30,8 +30,8 @@ export function Hero() {
           </div>
 
           <div className="flex-1 flex justify-center lg:justify-end">
-            <div className="bg-[#0a0a0a] border border-border rounded-2xl p-2 shadow-none">
-              <div className="rounded-xl overflow-hidden bg-[#111] w-[280px] sm:w-[320px]">
+            <div className="bg-card border border-border rounded-2xl p-2">
+              <div className="rounded-xl overflow-hidden bg-[#111] w-70 sm:w-[320px]">
                 <img
                   src="/screenshots/overview.jpg"
                   alt="QR Studio App"

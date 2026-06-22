@@ -12,7 +12,7 @@ const highlights = [
 
 export function AppShowcase() {
   return (
-    <section className="py-20 md:py-28 bg-[#0a0a0a] border-t border-border">
+    <section className="py-20 md:py-28 bg-card border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="flex-1">
@@ -42,7 +42,7 @@ export function AppShowcase() {
 
           <div className="flex-1 flex justify-center">
             <div className="bg-[#111] border border-border rounded-2xl p-2">
-              <div className="rounded-xl overflow-hidden bg-[#0a0a0a] w-[280px] sm:w-[320px]">
+              <div className="rounded-xl overflow-hidden bg-card w-70 sm:w-[320px]">
                 <img
                   src="/screenshots/create.jpg"
                   alt="QR Studio App - Create QR Code"
