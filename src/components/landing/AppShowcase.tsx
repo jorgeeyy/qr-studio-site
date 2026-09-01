@@ -1,5 +1,7 @@
 import { Check, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FadeIn } from "./FadeIn";
+import { APK_DOWNLOAD_URL } from "@/lib/constants";
 
 const highlights = [
   "Create custom QR codes in seconds",
@@ -15,7 +17,7 @@ export function AppShowcase() {
     <section className="py-20 md:py-28 bg-card border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1">
+          <FadeIn className="flex-1">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Get the QR Studio
             </h2>
@@ -32,15 +34,15 @@ export function AppShowcase() {
               ))}
             </ul>
 
-            <a href="/qr-studio.apk" download>
+            <a href={APK_DOWNLOAD_URL} download>
               <Button className="rounded-full px-8 gap-2 bg-white text-black hover:bg-white/90">
                 <QrCode className="w-5 h-5" />
                 Download Free
               </Button>
             </a>
-          </div>
+          </FadeIn>
 
-          <div className="flex-1 flex justify-center">
+          <FadeIn className="flex-1 flex justify-center" delay={0.15}>
             <div className="bg-[#111] border border-border rounded-2xl p-2">
               <div className="rounded-xl overflow-hidden bg-card w-70 sm:w-[320px]">
                 <img
@@ -50,7 +52,7 @@ export function AppShowcase() {
                 />
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

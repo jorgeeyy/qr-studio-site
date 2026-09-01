@@ -1,6 +1,7 @@
 import { QrCode, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { APK_DOWNLOAD_URL } from "@/lib/constants";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -29,7 +30,7 @@ export function Navbar() {
           </div>
 
           <div className="hidden md:block">
-            <a href="/qr-studio.apk" download>
+            <a href={APK_DOWNLOAD_URL} download>
               <Button className="rounded-full px-5 bg-white text-black hover:bg-white/90">
                 Download
               </Button>
@@ -57,7 +58,7 @@ export function Navbar() {
             Download
           </a>
           <div className="pt-2">
-            <a href="/qr-studio.apk" download>
+            <a href={APK_DOWNLOAD_URL} download>
               <Button className="w-full rounded-full bg-white text-black hover:bg-white/90">Download</Button>
             </a>
           </div>

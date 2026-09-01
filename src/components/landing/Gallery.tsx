@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { FadeIn } from "./FadeIn";
 
 const tabs = [
   {
@@ -25,13 +26,13 @@ export function Gallery() {
   return (
     <section id="screenshots" className="py-20 md:py-28 bg-black border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <FadeIn className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Explore all features from your scan
           </h2>
-        </div>
+        </FadeIn>
 
-        <div className="flex justify-center gap-1 mb-12">
+        <FadeIn className="flex justify-center gap-1 mb-12" delay={0.1}>
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -46,19 +47,19 @@ export function Gallery() {
               {tab.label}
             </button>
           ))}
-        </div>
+        </FadeIn>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          <div className="flex-1 text-center lg:text-left">
+          <FadeIn className="flex-1 text-center lg:text-left" key={`text-${activeContent.id}`}>
             <h3 className="text-2xl font-bold text-white mb-4">
               {activeContent.title}
             </h3>
             <p className="text-muted-foreground text-lg max-w-md mx-auto lg:mx-0">
               {activeContent.description}
             </p>
-          </div>
+          </FadeIn>
 
-          <div className="flex-1 flex justify-center">
+          <FadeIn className="flex-1 flex justify-center" key={`img-${activeContent.id}`} delay={0.1}>
             <div className="bg-card border border-border rounded-2xl p-2">
               <div className="rounded-xl overflow-hidden bg-[#111] w-70 sm:w-[320px]">
                 <img
@@ -69,7 +70,7 @@ export function Gallery() {
                 />
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

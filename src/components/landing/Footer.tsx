@@ -1,9 +1,20 @@
 import { QrCode } from "lucide-react";
 
 const footerLinks = {
-  Product: ["Features", "Download", "Changelog"],
-  Support: ["Contact", "FAQ", "Bug Report"],
-  Legal: ["Privacy Policy", "Terms of Service"],
+  Product: [
+    { label: "Features", href: "#features" },
+    { label: "Download", href: "#download" },
+    { label: "Changelog", href: "#" },
+  ],
+  Support: [
+    { label: "Contact", href: "#" },
+    { label: "FAQ", href: "#" },
+    { label: "Bug Report", href: "#" },
+  ],
+  Legal: [
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Service", href: "#" },
+  ],
 };
 
 export function Footer() {
@@ -30,9 +41,9 @@ export function Footer() {
               </h4>
               <ul className="space-y-2">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-sm text-muted-foreground hover:text-white transition-colors">
-                      {link}
+                  <li key={link.label}>
+                    <a href={link.href} className="text-sm text-muted-foreground hover:text-white transition-colors">
+                      {link.label}
                     </a>
                   </li>
                 ))}
