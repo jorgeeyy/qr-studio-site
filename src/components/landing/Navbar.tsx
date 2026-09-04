@@ -21,9 +21,6 @@ export function Navbar() {
             <a href="#features" className="text-sm text-muted-foreground hover:text-white transition-colors">
               Features
             </a>
-            <a href="#screenshots" className="text-sm text-muted-foreground hover:text-white transition-colors">
-              Screenshots
-            </a>
             <a href="#download" className="text-sm text-muted-foreground hover:text-white transition-colors">
               Download
             </a>
@@ -50,9 +47,6 @@ export function Navbar() {
         <div className="md:hidden border-t border-border bg-black px-4 py-4 space-y-1">
           <a href="#features" className="block py-3 text-sm text-muted-foreground hover:text-white" onClick={() => setMobileOpen(false)}>
             Features
-          </a>
-          <a href="#screenshots" className="block py-3 text-sm text-muted-foreground hover:text-white" onClick={() => setMobileOpen(false)}>
-            Screenshots
           </a>
           <a href="#download" className="block py-3 text-sm text-muted-foreground hover:text-white" onClick={() => setMobileOpen(false)}>
             Download
