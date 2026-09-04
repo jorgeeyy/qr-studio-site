@@ -31,7 +31,7 @@ const features = [
   },
   {
     icon: BarChart3,
-    title: "History & Analytics",
+    title: "History",
     description: "Track all your generated and scanned QR codes in one place.",
   },
   {
