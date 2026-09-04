@@ -11,11 +11,10 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <FadeIn className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight">
-              QR codes,{" "}
-              <span className="text-muted-foreground">refined.</span>
+              Create. Scan. Done.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Create, customize, and scan QR codes with professional-grade precision. Your all-in-one toolkit on Android.
+              A complete QR code toolkit that works fully offline. Create, customize, and scan — no internet needed.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href={APK_DOWNLOAD_URL} download>
