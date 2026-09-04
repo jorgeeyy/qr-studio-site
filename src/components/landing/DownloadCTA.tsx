@@ -1,4 +1,4 @@
-import { Download, Smartphone, ArrowRight } from "lucide-react";
+import { Download, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "./FadeIn";
 import { PhoneFrame } from "./PhoneFrame";
@@ -21,17 +21,11 @@ export function DownloadCTA() {
                 <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed">
                   Download the app now and start generating professional QR codes in seconds. It&apos;s free!
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <div className="flex justify-center lg:justify-start">
                   <a href={APK_DOWNLOAD_URL} download>
                     <Button className="rounded-full px-8 h-12 text-base gap-2 bg-white text-black hover:bg-white/90">
                       <Download className="w-5 h-5" />
                       Download APK
-                    </Button>
-                  </a>
-                  <a href="#features">
-                    <Button variant="outline" size="lg" className="rounded-full px-8 h-12 text-base gap-2 border-border text-white hover:bg-white/5">
-                      Learn More
-                      <ArrowRight className="w-5 h-5" />
                     </Button>
                   </a>
                 </div>
