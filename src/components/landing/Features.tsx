@@ -11,8 +11,8 @@ import { FadeIn } from "./FadeIn";
 const features = [
   {
     icon: Sparkles,
-    title: "Custom QR Studio",
-    description: "Design unique QR codes with custom colors, shapes, and logos.",
+    title: "Custom QR Designs",
+    description: "Design unique QR codes with custom colors, shapes, logos and more.",
   },
   {
     icon: Palette,
