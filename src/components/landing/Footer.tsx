@@ -52,9 +52,20 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-border pt-8 text-center">
+        <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} QR Studio. All rights reserved.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Developed by{" "}
+            <a
+              href="https://github.com/jorgeeyy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              JORGEEYY
+            </a>
           </p>
         </div>
       </div>
