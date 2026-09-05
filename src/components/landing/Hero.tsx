@@ -7,8 +7,8 @@ import { PhoneFrame } from "./PhoneFrame";
 import { APK_DOWNLOAD_URL } from "@/lib/constants";
 
 const phrases = [
-  { prefix: "Create. Scan. ", highlight: "Done.", color: "text-emerald-400" },
-  { prefix: "Create. Scan. ", highlight: "Share.", color: "text-emerald-400" },
+  { prefix: "Create. Scan. ", highlight: "Done.", color: "text-emerald-500" },
+  { prefix: "Create. Scan. ", highlight: "Share.", color: "text-emerald-500" },
 ];
 
 function TypewriterText({ delay }: { delay: number }) {
@@ -94,11 +94,11 @@ function TypewriterText({ delay }: { delay: number }) {
 
 export function Hero() {
   return (
-    <section className="pt-28 pb-20 md:pt-36 md:pb-28 bg-black overflow-hidden">
+    <section className="pt-28 pb-20 md:pt-36 md:pb-28 bg-background overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <FadeIn className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
               <TypewriterText delay={0.3} />
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 leading-relaxed">
@@ -106,13 +106,13 @@ export function Hero() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href={APK_DOWNLOAD_URL} download>
-                <Button size="lg" className="rounded-full px-8 h-12 text-base gap-2 bg-white text-black hover:bg-white/90">
+                <Button size="lg" className="rounded-full px-8 h-12 text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
                   <Download className="w-5 h-5" />
                   Download APK
                 </Button>
               </a>
               <a href="#features">
-                <Button variant="outline" size="lg" className="rounded-full px-8 h-12 text-base gap-2 border-border text-white hover:bg-white/5">
+                <Button variant="outline" size="lg" className="rounded-full px-8 h-12 text-base gap-2 border-border text-foreground hover:bg-muted">
                   Learn More
                   <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -135,16 +135,16 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              className="absolute -top-3 -right-3 w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-lg shadow-white/10"
+              className="absolute -top-3 -right-3 w-12 h-12 rounded-xl bg-primary flex items-center justify-center shadow-lg"
               initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
             >
-              <QrCode className="w-6 h-6 text-black" />
+              <QrCode className="w-6 h-6 text-primary-foreground" />
             </motion.div>
 
             <motion.div
-              className="absolute -bottom-2 -left-3 px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs text-white font-medium backdrop-blur-sm"
+              className="absolute -bottom-2 -left-3 px-3 py-1.5 rounded-full bg-muted border border-border text-xs text-foreground font-medium backdrop-blur-sm"
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: 0.8, ease: "easeOut" }}

@@ -6,16 +6,16 @@ import { APK_DOWNLOAD_URL } from "@/lib/constants";
 
 export function DownloadCTA() {
   return (
-    <section id="download" className="py-20 md:py-28 bg-black">
+    <section id="download" className="py-20 md:py-28 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="relative rounded-2xl border border-border bg-card overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center gap-10 p-8 md:p-12">
               <div className="flex-1 text-center lg:text-left">
-                <div className="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center mb-5">
-                  <Smartphone className="w-5 h-5 text-white" />
+                <div className="w-11 h-11 rounded-xl bg-muted flex items-center justify-center mb-5">
+                  <Smartphone className="w-5 h-5 text-foreground" />
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
                   Ready to create with QR Studio?
                 </h2>
                 <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed">
@@ -23,7 +23,7 @@ export function DownloadCTA() {
                 </p>
                 <div className="flex justify-center lg:justify-start">
                   <a href={APK_DOWNLOAD_URL} download>
-                    <Button className="rounded-full px-8 h-12 text-base gap-2 bg-white text-black hover:bg-white/90">
+                    <Button className="rounded-full px-8 h-12 text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
                       <Download className="w-5 h-5" />
                       Download APK
                     </Button>

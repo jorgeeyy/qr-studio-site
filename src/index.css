@@ -30,6 +30,24 @@
   --radius-xl: 1rem;
 }
 
+[data-theme="light"] {
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+  --color-card: #f9f9f9;
+  --color-card-foreground: #111111;
+  --color-primary: #000000;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f0f0f0;
+  --color-secondary-foreground: #111111;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #666666;
+  --color-accent: #f0f0f0;
+  --color-accent-foreground: #111111;
+  --color-border: #e0e0e0;
+  --color-input: #e0e0e0;
+  --color-ring: #cccccc;
+}
+
 @layer base {
   *,
   *::before,
