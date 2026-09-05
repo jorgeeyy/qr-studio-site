@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { APK_DOWNLOAD_URL } from "@/lib/constants";
 import { useTheme } from "@/lib/theme";
+import { GithubIcon } from "./GithubIcon";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -29,6 +30,15 @@ export function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
+            <a
+              href="https://github.com/jorgeeyy/qr_studio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+              aria-label="GitHub"
+            >
+              <GithubIcon className="w-5 h-5" />
+            </a>
             <button
               onClick={toggle}
               className="p-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
@@ -44,6 +54,15 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
+            <a
+              href="https://github.com/jorgeeyy/qr_studio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+              aria-label="GitHub"
+            >
+              <GithubIcon className="w-5 h-5" />
+            </a>
             <button
               onClick={toggle}
               className="p-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"

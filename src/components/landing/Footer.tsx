@@ -1,4 +1,5 @@
 import { QrCode } from "lucide-react";
+import { GithubIcon } from "./GithubIcon";
 
 const footerLinks = {
   Product: [
@@ -56,17 +57,15 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} QR Studio. All rights reserved.
           </p>
-          <p className="text-sm text-muted-foreground">
-            Developed by{" "}
-            <a
-              href="https://github.com/jorgeeyy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-foreground transition-colors"
-            >
-              JORGEEYY
-            </a>
-          </p>
+          <a
+            href="https://github.com/jorgeeyy/qr_studio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="GitHub"
+          >
+            <GithubIcon className="w-6 h-6" />
+          </a>
         </div>
       </div>
     </footer>
